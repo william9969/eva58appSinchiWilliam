@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Escoja una opcion</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button color="success" (click)="crear()">Crear Electrodomestico</ion-button>
+  <ion-button color="warning"(click)="listar()">Listar Electrodomestico</ion-button>
+  <ion-button color="danger"(click)="buscar()">Buscar Electrodomestico</ion-button>
+
+</ion-content>

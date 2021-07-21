@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>listarelectrodomestico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+    <ion-list-header>
+      Electrodomesticos
+    </ion-list-header>
+      <ion-item  *ngFor="let electrodomestico of electrodmesticos | async">
+        <!--<ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>-->
+        <ion-label>
+          <h2>{{electrodomestico.nombre}}</h2>
+          <h3>{{electrodomestico.costo}}</h3>
+          <p>{{electrodomestico.marca}}</p>
+          <p>{{electrodomestico.anoFabricacion}}</p>
+        </ion-label>
+      </ion-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="crear()">
+      <ion-icon name="save-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

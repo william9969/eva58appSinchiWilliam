@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>electrodomestico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-item>
+    <ion-input  name="name" placeholder="Nombre" [(ngModel)]="electrodomestico.nombre" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input  name="edad" placeholder="Marca" [(ngModel)]="electrodomestico.marca" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input  name="fecha" placeholder="Costo" [(ngModel)]="electrodomestico.costo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input  name="telefono" placeholder="Año Fabricacion" [(ngModel)]="electrodomestico.anoFabricacion"></ion-input>
+  </ion-item>
+  <ion-button color="success" (click)="guardar()">Crear</ion-button>
+  <ion-button color="danger" (click)="cancelar()">Cancelar</ion-button>
+ 
+</ion-content>

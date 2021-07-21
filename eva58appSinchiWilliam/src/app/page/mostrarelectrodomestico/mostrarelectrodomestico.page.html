@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>mostrarelectrodomestico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-input  type="text" name="telefono" placeholder="Ingrese Nombre Para Buscar" [(ngModel)]="nombre"></ion-input>
+  
+  <ion-button color="success" (click)="buscar()">Buscar</ion-button>
+  <hr>
+  <!--<ion-label>
+    <h2>{{electrodomestico.nombre}}</h2>
+    <h3>{{electrodomestico.costo}}</h3>
+    <p>{{electrodomestico.marca}}</p>
+    <p>{{electrodomestico.anoFabricacion}}</p>
+  </ion-label>-->
+</ion-content>
